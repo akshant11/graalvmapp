@@ -1,4 +1,4 @@
-package c.demo.graalvm.js;
+package com.demo.graalvm;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,7 +21,7 @@ public class LoadAndRunJS {
 			Value sqrtFunction = c.getBindings("js").getMember("squareRoot");
 			Double sqrtResult = sqrtFunction.execute(42).asDouble();
 			System.out.println("Calculation Result for Square Root (42) " + sqrtResult);
-		
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
