@@ -1,4 +1,4 @@
-package com.demo.graalvm;
+package com.demo.graalvm.runjs;
 
 import java.io.File;
 import java.io.IOException;

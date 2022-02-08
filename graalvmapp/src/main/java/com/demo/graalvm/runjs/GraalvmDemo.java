@@ -1,4 +1,4 @@
-package com.demo.graalvm;
+package com.demo.graalvm.runjs;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,6 +22,7 @@ public class GraalvmDemo {
 		while (sc.hasNext()) {
 			totalString = totalString + sc.next();
 		}
+		
 		Value helloWorldFunction = polyglot.eval("js", totalString);
 		String greeting = helloWorldFunction.execute("Akshant").asString();
 		System.out.println(greeting);
